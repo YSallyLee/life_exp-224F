@@ -1,0 +1,18 @@
+---
+title: "life_exp_24F_YSallyL"
+format: html
+editor: visual
+---
+
+## Running Code
+
+```{r}
+library(tidyverse)
+gapminder::gapminder_unfiltered  |> 
+  group_by(year) |>
+  filter(lifeExp == max(lifeExp)) |>
+  ungroup() |>
+  select(year, country, lifeExp) |>
+  arrange(year) ->
+  sumdat
+```
