@@ -16,3 +16,9 @@ gapminder::gapminder_unfiltered  |>
   arrange(year) ->
   sumdat
 ```
+
+
+```{r}
+str(sumdat)
+```
+
