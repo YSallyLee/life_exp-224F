@@ -4,7 +4,11 @@ format: html
 editor: visual
 ---
 
-## Running Code
+## Abstract
+
+This is a famous analysis. Many people have done this.
+
+## Analysis
 
 ```{r}
 library(tidyverse)
@@ -17,8 +21,6 @@ gapminder::gapminder_unfiltered  |>
   sumdat
 ```
 
-
 ```{r}
 str(sumdat)
 ```
-
